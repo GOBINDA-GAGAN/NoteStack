@@ -1,7 +1,7 @@
 import React from "react"
 
 import { useMediaQuery } from "@/hooks/use-media-query"
-import { Button } from "@/components/ui/Button"
+import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,

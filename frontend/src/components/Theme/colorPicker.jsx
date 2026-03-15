@@ -6,7 +6,7 @@ import {
 import React, { useState, useCallback, useMemo, useEffect } from "react";
 import { HexColorPicker } from "react-colorful";
 import { Input } from "../ui/input";
-import { Button } from "../ui/Button";
+import { Button } from "../ui/button";
 import { Pipette } from "lucide-react";
 import { hslToHex } from "./colorConversion";
 import { useThemeStore } from "@/stores/useThemeStore";

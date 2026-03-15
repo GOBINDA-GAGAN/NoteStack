@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { Button } from "../ui/Button";
+import { Button } from "../ui/button";
 import { CheckCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import { useContributionStore } from "@/stores/useContributionStore";
 

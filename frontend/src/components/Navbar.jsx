@@ -1,6 +1,6 @@
 import React from 'react'
 import { ModeToggle } from "./mode-toggle.jsx";
-import { Button } from './ui/Button.jsx';
+import { Button } from './ui/button.jsx';
 import { Link } from "react-router-dom";
 import { Github, User } from 'lucide-react';
 import { useAuthStore } from '../stores/useAuthStore.js';

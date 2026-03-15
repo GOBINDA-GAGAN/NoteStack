@@ -2,7 +2,7 @@ import { ImageIcon, Loader2, Upload, X } from 'lucide-react';
 import React, { useEffect, useState, useCallback } from 'react';
 import { FileDrop } from 'react-file-drop';
 import { Skeleton } from './ui/skeleton';
-import { Button } from './ui/Button';
+import { Button } from './ui/button';
 import { useImageStore } from '@/stores/useImageStore';
 import { toast } from 'sonner';
 

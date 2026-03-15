@@ -1,6 +1,6 @@
 import { Popover, PopoverContent, PopoverTrigger } from '@radix-ui/react-popover'
 import React from 'react'
-import { Button } from '../ui/Button'
+import { Button } from '../ui/button'
 
 export const TablePopover = ({ editor, controllers, triggerIcon }) => {
     return (

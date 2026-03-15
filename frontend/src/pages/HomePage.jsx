@@ -3,7 +3,7 @@ import { useAuthStore } from '@/stores/useAuthStore';
 import { Bold, Code2, EllipsisVertical, File, Folder, Hash, ListChecksIcon, Plus, Table } from 'lucide-react';
 import { axiosInstance } from '@/lib/axios';
 import { formatTime, formatDate } from '@/lib/utils.js';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import NotesSkeleton from '@/components/sekeletons/NotesSkeleton';
 import { useNoteStore } from '@/stores/useNoteStore';
 import NotesOption from '@/components/NotesOption';

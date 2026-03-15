@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useCurrentEditor } from '@tiptap/react';
 import { useNavigate } from 'react-router-dom';
 import { useNoteStore } from '@/stores/useNoteStore';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import {
     Dialog,
     DialogContent,
