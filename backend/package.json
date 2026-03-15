@@ -1,10 +1,11 @@
 {
-  "name": "NoteStack",
+  "name": "notestack",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node server.js"
   },
   "author": "Gobinda Gagan Dey",
   "license": "ISC",
