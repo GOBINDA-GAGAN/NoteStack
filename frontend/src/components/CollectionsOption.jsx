@@ -1,7 +1,7 @@
 import { Popover, PopoverContent, PopoverTrigger } from '@radix-ui/react-popover'
 import React, { useEffect, useState, useCallback } from 'react'
 import { SidebarMenuAction, useSidebar } from './ui/sidebar'
-import { Button } from './ui/button'
+import { Button } from './ui/Button'
 import { Bookmark, FilePlus2, MoreHorizontal, Pencil, Pin, PinOff, Plus, Trash2 } from 'lucide-react'
 import { DropdownMenuSeparator, Label } from '@radix-ui/react-dropdown-menu'
 import { Input } from './ui/input'

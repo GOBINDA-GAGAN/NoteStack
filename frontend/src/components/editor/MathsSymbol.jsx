@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "katex/dist/katex.min.css";
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
 import { Sigma } from 'lucide-react';
-import { Button } from '../ui/button';
+import { Button } from '../ui/Button';
 import TooltipWrapper from '../TooltipWrapper';
 import katex from 'katex';
 export const MathsSymbol = ({ editor }) => {

@@ -24,7 +24,7 @@ import { Link } from "react-router-dom"
 import SidebarSkeleton from "../sekeletons/SidebarSkeleton"
 import NotesOption from "../NotesOption"
 import CollectionsOption from "../CollectionsOption"
-import { Button } from "../ui/button"
+import { Button } from "../ui/Button"
 import { useLocalStorage } from "@/stores/useLocalStorage"
 
 const NoteItem = ({ note }) => {

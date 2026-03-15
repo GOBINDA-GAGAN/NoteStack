@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button';
 import { useNoteStore } from '@/stores/useNoteStore';
 import { Copy, CopyCheck, Download, Pencil, X } from 'lucide-react';
 import React, { useEffect, useState } from 'react'

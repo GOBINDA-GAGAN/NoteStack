@@ -17,7 +17,8 @@ import {
     Heading6,
     Heading
 } from 'lucide-react';
-import Button from '../../components/ui/button';
+import { Button } from '../ui/Button';
+
 
 
 export const SelectHeading = ({ editor }) => {

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Check, ChevronsUpDown, CodeSquare, Copy, CopyCheck, CopyIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import {
   Command,
   CommandEmpty,

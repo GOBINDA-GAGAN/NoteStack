@@ -1,7 +1,7 @@
 import React from 'react';
 import { Separator } from './ui/separator';
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Button } from './ui/button';
+import { Button } from './ui/Button';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { EllipsisVertical, Folder, FolderOutput, Pencil, Trash2 } from 'lucide-react';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from './ui/command';

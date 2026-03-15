@@ -1,6 +1,6 @@
 import StreakCalender from "@/components/streak/StreakCalender";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useAuthStore } from "@/stores/useAuthStore";
 import { Label } from "@radix-ui/react-dropdown-menu";

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Label } from "../ui/label";
-import { Button } from "../ui/button";
+import { Button } from "../ui/Button";
 import { Check } from "lucide-react";
 import { useLocalStorage } from "@/stores/useLocalStorage";
 import { useThemeStore } from "@/stores/useThemeStore";

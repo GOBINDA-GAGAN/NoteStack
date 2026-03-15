@@ -1,5 +1,5 @@
 import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button';
 
 const SuggestionList = forwardRef(({ items = [], editor, command, range }, ref) => {
     const [selectedIndex, setSelectedIndex] = useState(0);

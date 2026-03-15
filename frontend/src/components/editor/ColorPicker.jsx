@@ -1,7 +1,7 @@
 import React from 'react';
 import TooltipWrapper from '../TooltipWrapper';
 import { Popover, PopoverContent, PopoverTrigger } from '@radix-ui/react-popover';
-import { Button } from '../ui/button';
+import { Button } from '../ui/Button';
 import { Eraser } from 'lucide-react';
 
 export const ColorPicker = ({
