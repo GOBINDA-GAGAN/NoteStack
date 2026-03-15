@@ -14,7 +14,7 @@ import LoginPage from "./pages/LogInPage";
 import SettingsPage from "./pages/SettingsPage";
 import EmailVerificationPage from "./pages/EmailVerificationPage";
 import { Loader } from "lucide-react";
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
 import ForgetPasswordPage from "./pages/ForgetPasswordPage";
 import { TooltipProvider } from "@radix-ui/react-tooltip";
 import NotePage from "./pages/NotePage";
