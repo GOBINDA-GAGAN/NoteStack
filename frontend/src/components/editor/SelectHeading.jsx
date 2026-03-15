@@ -19,11 +19,8 @@ import {
 } from 'lucide-react';
 import { Button } from '../ui/button';
 
-
-
 export const SelectHeading = ({ editor }) => {
     const headers = [1, 2, 3, 4, 5, 6];
-
     return (
         <Select>
             <SelectTrigger className="w-16">
