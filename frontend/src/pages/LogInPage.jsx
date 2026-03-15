@@ -47,87 +47,105 @@ const LoginPage = ({ className, ...props }) => {
   }
 
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center bg-muted p-6 md:p-10">
-      <div className="w-full max-w-sm md:max-w-3xl">
-        <div className={cn("flex flex-col gap-6", className)} {...props}>
-          <Card className="overflow-hidden">
-            <CardContent className="grid p-0 md:grid-cols-2">
-              <form onSubmit={handFormSubmit} className="p-6 md:p-8">
-                <div className="flex flex-col gap-4">
-                  <div className="flex flex-col items-center text-center">
-                    <h1 className="logo text-lg">NoteStack</h1>
-                    <p className="text-balance text-muted-foreground">
-                      Login to your NoteStack account
-                    </p>
-                  </div>
+  <div className="flex min-h-svh flex-col items-center justify-center bg-muted p-6">
+  <div className="w-full max-w-md">
+    <Card>
+      <CardContent className="p-8">
 
-                  <div className="grid gap-2">
-                    <Label htmlFor="email">Username</Label>
-                    <Input
-                      id="userName"
-                      placeholder="username"
-                      value={formData.userName}
-                      autoComplete="username"
-                      required
-                      onChange={handleChange}
-                    />
-                    {errors.userName && <p className="text-red-500">{errors.userName}</p>}
-                  </div>
-                  <div className="grid gap-2">
-                    <div className="flex items-center">
-                      <Label htmlFor="password">Password</Label>
-                    </div>
-                    <Input
-                      id="password"
-                      type="password"
-                      autoComplete="password"
-                      required
-                      value={formData.password}
-                      onChange={handleChange}
-                    />
-                    <Link
-                      to="/forget-password"
-                      className="mb-4 text-sm underline-offset-2 hover:underline"
-                    >
-                      Forgot your password?
-                    </Link>
-                  </div>
-                  <Button type="submit" disabled={isLoggingIn}>
-                    {
-                      isLoggingIn ?
-                        <>
-                          <Loader2 className="animate-spin" />
-                          Please wait
-                        </>
-                        :
-                        "Log in"
-                    }
-                  </Button>
+        <form onSubmit={handFormSubmit} className="flex flex-col gap-5">
 
-                  <div className="text-center text-sm">
-                    Don&apos;t have an account?{" "}
-                    <Link to="/signup" className="hover:underline underline-offset-4">
-                      Sign up
-                    </Link>
-                  </div>
-                </div>
-              </form>
-              <div className="relative hidden bg-muted md:block">
-                <img
-                  src="https://ui.shadcn.com/placeholder.svg"
-                  alt="Image"
-                  className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
-                />
-              </div>
-            </CardContent>
-          </Card>
-          <div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-primary">
-            By clicking continue, you agree to our <Link to="#">Terms of Service</Link>{" "}
-            and <Link to="#">Privacy Policy</Link>.
+          {/* Logo */}
+          <div className="flex flex-col items-center text-center gap-1">
+            <h1 className="logo text-xl font-semibold">NoteStack</h1>
+            <p className="text-sm text-muted-foreground">
+              Login to your account
+            </p>
           </div>
-        </div>
-      </div>
-    </div>
+
+          {/* Google Login */}
+          <Button
+            type="button"
+            variant="outline"
+            className="w-full flex items-center gap-2"
+          >
+            <img
+              src="https://www.svgrepo.com/show/475656/google-color.svg"
+              className="w-5 h-5"
+            />
+            Continue with Google
+          </Button>
+
+          <div className="flex items-center gap-2">
+            <div className="h-px bg-border flex-1" />
+            <span className="text-xs text-muted-foreground">OR</span>
+            <div className="h-px bg-border flex-1" />
+          </div>
+
+          {/* Username */}
+          <div className="grid gap-2">
+            <Label>Username</Label>
+            <Input
+              id="userName"
+              placeholder="username"
+              value={formData.userName}
+              autoComplete="username"
+              required
+              onChange={handleChange}
+            />
+            {errors.userName && (
+              <p className="text-red-500 text-sm">{errors.userName}</p>
+            )}
+          </div>
+
+          {/* Password */}
+          <div className="grid gap-2">
+            <Label>Password</Label>
+
+            <Input
+              id="password"
+              type="password"
+              required
+              value={formData.password}
+              onChange={handleChange}
+            />
+
+            <Link
+              to="/forget-password"
+              className="text-xs text-muted-foreground hover:underline"
+            >
+              Forgot password?
+            </Link>
+          </div>
+
+          {/* Login Button */}
+          <Button type="submit" disabled={isLoggingIn}>
+            {isLoggingIn ? (
+              <>
+                <Loader2 className="animate-spin mr-2 h-4 w-4" />
+                Please wait
+              </>
+            ) : (
+              "Log in"
+            )}
+          </Button>
+
+          {/* Signup */}
+          <div className="text-center text-sm">
+            Don't have an account?{" "}
+            <Link to="/signup" className="underline">
+              Sign up
+            </Link>
+          </div>
+
+        </form>
+      </CardContent>
+    </Card>
+
+    <p className="text-center text-xs text-muted-foreground mt-4">
+      By continuing you agree to our Terms & Privacy Policy
+    </p>
+  </div>
+</div>
   )
 }
 

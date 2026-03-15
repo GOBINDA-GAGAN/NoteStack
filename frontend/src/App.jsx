@@ -10,7 +10,7 @@ import Tiptap from "./components/editor/Tiptap";
 import HomePage from "./pages/HomePage";
 import SignUpPage from "./pages/SignUpPage";
 import ProfilePage from "./pages/ProfilePage";
-import LoginPage from "./pages/LoginPage";
+import LoginPage from "./pages/LogInPage";
 import SettingsPage from "./pages/SettingsPage";
 import EmailVerificationPage from "./pages/EmailVerificationPage";
 import { Loader } from "lucide-react";
