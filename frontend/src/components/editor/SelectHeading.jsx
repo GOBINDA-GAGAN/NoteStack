@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../ui/Button';
+
 import TooltipWrapper from '../TooltipWrapper';
 import {
     Select,
@@ -17,6 +17,7 @@ import {
     Heading6,
     Heading
 } from 'lucide-react';
+import Button from '../../components/ui/button';
 
 
 export const SelectHeading = ({ editor }) => {
