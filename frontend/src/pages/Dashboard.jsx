@@ -11,11 +11,9 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Separator } from "@/components/ui/separator";
 import {
-  SidebarCloseTrigger,
   SidebarInset,
   SidebarOpenTrigger,
   SidebarProvider,
-  SidebarTrigger,
   useSidebar,
 } from "@/components/ui/sidebar";
 import { Link, Outlet } from "react-router-dom";
